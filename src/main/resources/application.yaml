@@ -1,0 +1,18 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: automated-account-control
+  datasource:
+    url: jdbc:postgresql://localhost:5432/acc_db
+    username: postgres
+    password: HankTest1
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: true
+    hibernate:
+      ddl-auto: create #
